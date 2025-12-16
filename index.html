@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxVision - Premium Eyewear Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner text-center py-2">
+        <small><i class="bi bi-truck"></i> FREE SHIPPING on orders above ₹1500 | <i class="bi bi-arrow-clockwise"></i> 14 Days Easy Returns</small>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <i class="bi bi-eyeglasses fs-3 me-2 text-gradient"></i>
+                <span class="fw-bold text-gradient">LuxVision</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-sunglasses me-1"></i> Sunglasses
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" style="width: 700px;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">GENDER</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">All</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Men</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Women</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Kids</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">SHAPE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Rectangle</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Round</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Cat Eye</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Geometric</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">TOP BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Zefr</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Titan</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Fastrack</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Wayfarer</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">FEATURED BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Gucci</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Oakley</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Carrera</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Rayban</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">COLLECTION</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Stepper</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Dash For Kids</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Burberry</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Aristo</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">STYLE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Tom Ford</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">EyeX</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Vogue Eyewear</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Ted Baker</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">FRAME TYPE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Rimmed</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Semi-Rimmed</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Rimless</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Hipster</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">PREMIUM BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Tommy Hilfiger</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Silhouette</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Signature</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('sunglasses')">Spiderman</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-eyeglasses me-1"></i> Eyeglasses
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" style="width: 700px;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">GENDER</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">All</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Men</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Women</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Kids</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">SHAPE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Rectangle</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Round</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Cat Eye</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Geometric</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">TOP BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Zefr</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Titan</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Fastrack</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Wayfarer</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">FEATURED BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Gucci</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Oakley</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Carrera</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Rayban</a>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">COLLECTION</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Stepper</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Dash For Kids</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Burberry</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Aristo</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">STYLE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Tom Ford</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">EyeX</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Vogue Eyewear</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Ted Baker</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">FRAME TYPE</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Rimmed</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Semi-Rimmed</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Rimless</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Hipster</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <h6 class="dropdown-header">PREMIUM BRANDS</h6>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Tommy Hilfiger</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Silhouette</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Signature</a>
+                                        <a class="dropdown-item" href="#products" onclick="filterProducts('eyeglasses')">Spiderman</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactLensesDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-eye me-1"></i> Contact Lenses
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="#products" onclick="filterProducts('contacts')">All Contact Lenses</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#products" onclick="filterProducts('contacts')">BAUSCH & LOMB</a></li>
+                            <li><a class="dropdown-item" href="#products" onclick="filterProducts('contacts')">JOHNSON & JOHNSON</a></li>
+                            <li><a class="dropdown-item" href="#products" onclick="filterProducts('contacts')">COOPER VISION</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown">
+                            Accessories
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" style="width: 320px;">
+                            <li><a class="dropdown-item" href="#products" onclick="filterProducts('accessories')">All Accessories</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header ps-3">Contact Lens Solutions</h6></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/ContactlensSolution/cl-img1.jpg" alt="Contact Lens Solution" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Multi-Purpose Solution
+                            </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/ContactlensSolution/cl-img2.jpg" alt="Hydrating Drops" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Hydrating Drops
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header ps-3">Lens Wipes</h6></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/lensWipes/img1.jpg" alt="Premium Wipes" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Premium Wipes
+                            </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/lensWipes/img2.jpeg" alt="Microfiber Cloth" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Microfiber Cloth
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header ps-3">Packaging Cases</h6></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/packagingCase/c-img1.jpg" alt="Hard Shell Case" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Hard Shell Case
+                            </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/packagingCase/c-img2.jpg" alt="Soft Pouch Case" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Soft Pouch Case
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header ps-3">Cleaning Solutions</h6></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/lensCleaningSolution/s-img2.jpg" alt="Spray Solution" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Spray Solution
+                            </a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#products" onclick="filterProducts('accessories')">
+                                <img src="images/accessories/lensCleaningSolution/s-img3.jpg" alt="Anti-Fog Solution" class="me-2" style="width: 30px; height: 30px; object-fit: cover; border-radius: 4px;">
+                                Anti-Fog Solution
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-gradient rounded-pill px-3 py-1 ms-2" href="#book-appointment" style="font-weight: 600;">Book Appointment</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle me-1"></i> <span id="loginBtnText">Sign In</span>
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" id="loginDropdownItem">Login / Register</a></li>
+                            <li><a class="dropdown-item" href="#" id="logoutDropdownItem" style="display: none;" onclick="logout()">Logout</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="myAccountDropdownItem" onclick="handleMyAccountClick(event)">My Account</a></li>
+                            <li><a class="dropdown-item" href="#" id="myOrdersDropdownItem" onclick="handleMyOrdersClick(event)">My Orders</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="bi bi-search fs-5"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#wishlistOffcanvas">
+                            <i class="bi bi-heart fs-5"></i>
+                            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle" id="wishlistBadge">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="themeToggle">
+                            <i class="bi bi-moon-fill fs-5"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <span class="badge cart-badge position-absolute top-0 start-100 translate-middle" id="cartBadge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-slide gradient-bg-1">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-6 text-white animate-slide-in">
+                                    <span class="badge bg-light text-dark mb-3 px-3 py-2">NEW ARRIVAL</span>
+                                    <h1 class="display-2 fw-bold mb-4">Summer Collection 2025</h1>
+                                    <p class="lead mb-4">Bold styles for bright days. Discover eyewear that matches your personality.</p>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-light btn-lg px-5 rounded-pill" onclick="scrollToProducts()">Shop Now</button>
+                                        <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Try Virtual</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-image-wrapper">
+                                        <img src="images/Carousel/summerCollection.png" alt="Summer Collection" class="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-slide gradient-bg-2">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-6 text-white animate-slide-in">
+                                    <span class="badge bg-light text-dark mb-3 px-3 py-2">PREMIUM QUALITY</span>
+                                    <h1 class="display-2 fw-bold mb-4">Polarized Perfection</h1>
+                                    <p class="lead mb-4">See clearly, look amazing. Advanced lens technology for ultimate clarity.</p>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-light btn-lg px-5 rounded-pill" onclick="scrollToProducts()">Explore Now</button>
+                                        <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Learn More</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-image-wrapper">
+                                        <img src="images/Carousel/polarized.jpeg" alt="Polarized Collection" class="hero-img" style="object-fit: fill">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-slide gradient-bg-3">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-6 text-white animate-slide-in">
+                                    <span class="badge bg-light text-dark mb-3 px-3 py-2">BEST SELLER</span>
+                                    <h1 class="display-2 fw-bold mb-4">Blue Light Protection</h1>
+                                    <p class="lead mb-4">Protect your eyes from digital strain. Perfect for work and gaming.</p>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-light btn-lg px-5 rounded-pill" onclick="scrollToProducts()">Shop Collection</button>
+                                        <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Read Benefits</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-image-wrapper">
+                                        <img src="images/Carousel/blueLight.jpg" alt="Blue Light Glasses" class="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-slide gradient-bg-4">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-6 text-white animate-slide-in">
+                                    <span class="badge bg-light text-dark mb-3 px-3 py-2">FEATURED COLLECTION</span>
+                                    <h1 class="display-2 fw-bold mb-4">Premium Eyewear Brands We Offer</h1>
+                                    <p class="lead mb-4">Discover a curated selection of global eyewear brands — blending style, comfort, and innovation to suit every face.
+                                      <br>Explore iconic designs trusted worldwide. Find your perfect fit today.</p>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-light btn-lg px-5 rounded-pill" onclick="scrollToProducts()">Explore Now</button>
+                                        <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Learn More</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-image-wrapper">
+                                        <img src="images/Carousel/brandedCollection.jpg" alt="Branded Collection" class="hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h6 class="mt-3 mb-2">100% Authentic</h6>
+                        <small class="muted-text">Original Products</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h6 class="mt-3 mb-2">Free Shipping</h6>
+                        <small class="muted-text">On orders above ₹1500</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </div>
+                        <h6 class="mt-3 mb-2">14 Days Return</h6>
+                        <small class="muted-text">Easy returns & exchange</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h6 class="mt-3 mb-2">24/7 Support</h6>
+                        <small class="muted-text">Always here to help</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="category-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Shop by Category</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card" onclick="filterProducts('sunglasses')">
+                        <img src="images/category-sunglasses.jpg" alt="Sunglasses" class="category-img">
+                        <div class="category-overlay">
+                            <h3>Sunglasses</h3>
+                            <p>UV Protection & Style</p>
+                            <button class="btn btn-light rounded-pill">Explore <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card" onclick="filterProducts('eyeglasses')">
+                        <img src="images/category-eyeglasses.jpg" alt="Eyeglasses" class="category-img">
+                        <div class="category-overlay">
+                            <h3>Eyeglasses</h3>
+                            <p>Clear Vision, Sharp Style</p>
+                            <button class="btn btn-light rounded-pill">Explore <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card" onclick="filterProducts('contacts')">
+                        <img src="images/category-contacts.avif" alt="Contact Lenses" class="category-img">
+                        <div class="category-overlay">
+                            <h3>Contact Lenses</h3>
+                            <p>Comfort All Day Long</p>
+                            <button class="btn btn-light rounded-pill">Explore <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title mb-0">Featured Products</h2>
+                <div class="filter-controls d-none d-md-flex gap-2">
+                    <button class="btn btn-sm btn-filter active" data-filter="all">All</button>
+                    <button class="btn btn-sm btn-filter" data-filter="sunglasses">Sunglasses</button>
+                    <button class="btn btn-sm btn-filter" data-filter="eyeglasses">Eyeglasses</button>
+                    <button class="btn btn-sm btn-filter" data-filter="contacts">Contact Lenses</button>
+                    <button class="btn btn-sm btn-filter" data-filter="accessories">Accessories</button>
+                </div>
+            </div>
+
+            <!-- Mobile Filter Dropdown -->
+            <div class="d-md-none mb-4">
+                <select class="form-select" id="mobileFilter" onchange="filterProductsMobile(this.value)">
+                    <option value="all">All Products</option>
+                    <option value="sunglasses">Sunglasses</option>
+                    <option value="eyeglasses">Eyeglasses</option>
+                    <option value="contacts">Contact Lenses</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-gradient btn-lg px-5 rounded-pill" onclick="loadMoreProducts()">
+                    Load More Products <i class="bi bi-arrow-down-circle ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Why Choose LuxVision?</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-number">01</div>
+                            <div class="feature-content">
+                                <h4>Premium Quality</h4>
+                                <p>Handcrafted frames with attention to every detail. Only the finest materials used.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">02</div>
+                            <div class="feature-content">
+                                <h4>Advanced Technology</h4>
+                                <p>Blue light protection, anti-glare coating, and polarized lenses for ultimate eye protection.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">03</div>
+                            <div class="feature-content">
+                                <h4>Perfect Fit Guarantee</h4>
+                                <p>Free adjustments and fittings at our stores. Your comfort is our priority.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">04</div>
+                            <div class="feature-content">
+                                <h4>Affordable Luxury</h4>
+                                <p>Premium eyewear at accessible prices. No compromise on quality or style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-choose-images">
+                        <div class="main-image mb-4">
+                            <img src="images/store.png" alt="Our Store" class="img-fluid why-choose-img">
+                        </div>
+                        <div class="sub-images d-flex gap-4">
+                            <div class="sub-image">
+                                <img src="images/quality.png" alt="Quality" class="img-fluid why-choose-img">
+                            </div>
+                            <div class="sub-image">
+                                <img src="images/product.png" alt="Product" class="img-fluid why-choose-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">What Our Customers Say</h2>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-5">
+                    <div class="testimonial-image">
+                        <img src="images/customer.png" alt="Happy Customers" class="img-fluid rounded-4 testimonial-img mb-4">
+                        <img src="images/customer2.png" alt="Happy Customers" class="img-fluid rounded-4 testimonial-img">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="testimonial-card">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-2">"Best glasses I've ever bought! The quality is exceptional and the fit is perfect. Highly recommend LuxVision!"</p>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="avatar me-2" style="width: 40px; height: 40px; font-size: 0.8rem;">JD</div>
+                                    <div>
+                                        <h6 class="mb-0" style="font-size: 0.9rem;">John Doe</h6>
+                                        <small class="verified-buyer" style="font-size: 0.75rem;">Verified Buyer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="testimonial-card">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-2">"Amazing customer service! They helped me choose the perfect frames for my face shape. Love my new sunglasses!"</p>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="avatar me-2" style="width: 40px; height: 40px; font-size: 0.8rem;">SM</div>
+                                    <div>
+                                        <h6 class="mb-0" style="font-size: 0.9rem;">Sarah Miller</h6>
+                                        <small class="verified-buyer" style="font-size: 0.75rem;">Verified Buyer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="testimonial-card">
+                                <div class="stars mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="testimonial-text mb-2">"Fast delivery and great packaging. The blue light glasses have really helped reduce my eye strain. Thank you!"</p>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="avatar me-2" style="width: 40px; height: 40px; font-size: 0.8rem;">MJ</div>
+                                    <div>
+                                        <h6 class="mb-0" style="font-size: 0.9rem;">Mike Johnson</h6>
+                                        <small class="verified-buyer" style="font-size: 0.75rem;">Verified Buyer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Appointment -->
+    <section id="book-appointment" class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <i class="bi bi-calendar-check display-3 text-gradient mb-4"></i>
+                    <h2 class="mb-3">Book an Appointment</h2>
+                    <p class="lead text-muted mb-4">Schedule a visit to our store for personalized eyewear consultation and fitting.</p>
+                    <form class="appointment-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control rounded-pill" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control rounded-pill" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control rounded-pill" placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control rounded-pill" required>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select rounded-pill" required>
+                                    <option value="">Select Service</option>
+                                    <option value="eye-test">Eye Test & Consultation</option>
+                                    <option value="frame-fitting">Frame Fitting & Adjustment</option>
+                                    <option value="contact-lens">Contact Lens Fitting</option>
+                                    <option value="sunglasses">Sunglasses Selection</option>
+                                    <option value="blue-light">Blue Light Glasses</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control rounded-3" rows="3" placeholder="Additional Notes (Optional)"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-gradient rounded-pill w-100" type="submit">
+                                    Book Appointment <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">About Us</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-images text-center">
+                        <img src="images/aboutus.jpg" alt="Our Optician Team" class="img-fluid rounded-4 mb-4" style="height: 400px; object-fit: cover; width: 100%;">
+                        <img src="images/aboutus1.jpg" alt="Our Store" class="img-fluid rounded-4" style="height: 400px; object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="mb-4">Crafting Vision, Enhancing Lives</h3>
+                        <p class="lead mb-4">Founded in 2010, LuxVision has been serving the Ghaziabad community with premium eyewear solutions for over a decade. Our commitment to excellence and customer satisfaction sets us apart in the industry.</p>
+                        <p class="mb-4">At LuxVision, we believe that clear vision is fundamental to a quality life. Our team of certified opticians brings years of expertise to ensure you receive the perfect eyewear tailored to your unique needs and style preferences.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill text-gradient me-2"></i>
+                                        <h6 class="mb-0">Expert Consultation</h6>
+                                    </div>
+                                    <p class="small text-muted mb-0">Personalized eye care advice from certified professionals</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill text-gradient me-2"></i>
+                                        <h6 class="mb-0">Premium Brands</h6>
+                                    </div>
+                                    <p class="small text-muted mb-0">Curated selection from world-renowned eyewear brands</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill text-gradient me-2"></i>
+                                        <h6 class="mb-0">Advanced Technology</h6>
+                                    </div>
+                                    <p class="small text-muted mb-0">State-of-the-art equipment for precise fittings</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill text-gradient me-2"></i>
+                                        <h6 class="mb-0">Lifetime Support</h6>
+                                    </div>
+                                    <p class="small text-muted mb-0">Ongoing care and adjustments for your eyewear</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-gradient rounded-pill px-4" onclick="scrollToProducts()">Explore Products</button>
+                            <a href="#book-appointment" class="btn btn-outline-primary rounded-pill px-4">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light-mode">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Contact Us</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Get In Touch</h3>
+                        <p class="lead mb-4">Have questions or ready to schedule an appointment? Reach out to us through any of the channels below.</p>
+                        
+                        <div class="contact-details">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="icon-circle bg-gradient me-3">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Our Location</h6>
+                                    <p class="mb-0">123 Vision Street, Sector 15<br>Ghaziabad, Uttar Pradesh 201001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="icon-circle bg-gradient me-3">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Phone Number</h6>
+                                    <p class="mb-0">+91 98765 43210<br>+91 11 2345 6789</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="icon-circle bg-gradient me-3">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Email Address</h6>
+                                    <p class="mb-0">info@luxvision.com<br>support@luxvision.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start">
+                                <div class="icon-circle bg-gradient me-3">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Working Hours</h6>
+                                    <p class="mb-0">Monday - Saturday: 10:00 AM - 8:00 PM<br>Sunday: 12:00 PM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form glass-card p-4 rounded-4">
+                        <h3 class="mb-4">Send us a Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control rounded-pill" id="contactName" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control rounded-pill" id="contactEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control rounded-pill" id="contactPhone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control rounded-pill" id="contactSubject" placeholder="Enter subject">
+                            </div>
+                            <div class="mb-4">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea class="form-control rounded-3" id="contactMessage" rows="4" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient w-100 rounded-pill">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-3">
+                        <i class="bi bi-eyeglasses fs-3 me-2"></i>
+                        <span class="fs-4 fw-bold">LuxVision</span>
+                    </div>
+                    <p class="muted-text mb-3">Your trusted partner for premium eyewear. Quality vision, stylish life.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="footer-title">Shop</h6>
+                    <ul class="footer-links">
+                        <li><a href="#products">Sunglasses</a></li>
+                        <li><a href="#products">Eyeglasses</a></li>
+                        <li><a href="#products">Contact Lenses</a></li>
+                        <li><a href="#products">Accessories</a></li>
+                        <li><a href="#products">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="footer-title">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 muted-text">&copy; 2025 LuxVision. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!-- Payment methods image removed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title w-100 text-center" id="loginModalLabel">Login or Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <ul class="nav nav-tabs nav-fill mb-4" id="loginRegisterTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Register</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="loginRegisterTabContent">
+                        <!-- Login Form -->
+                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="loginUsername" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="loginUsername" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control border-end-0" id="loginPassword" required>
+                                        <button class="btn btn-outline-secondary border-start-0" type="button" id="toggleLoginPassword">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-gradient w-100">Login</button>
+                            </form>
+                        </div>
+                        <!-- Register Form -->
+                        <div class="tab-pane fade" id="register" role="tabpanel">
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="registerUsername" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="registerUsername" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerAddress" class="form-label">Address</label>
+                                    <textarea class="form-control" id="registerAddress" rows="2" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerContact" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="registerContact" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control border-end-0" id="registerPassword" required>
+                                        <button class="btn btn-outline-secondary border-start-0" type="button" id="toggleRegisterPassword">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-gradient w-100">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-body p-4">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text border-0 bg-transparent">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="form-control border-0 bg-transparent" placeholder="Search products..." id="searchInput" onkeyup="searchProducts()">
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div id="searchResults" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Shopping Cart (<span id="cartItemCount">0</span>)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartItems">
+                <div class="empty-cart text-center py-5">
+                    <i class="bi bi-cart-x display-1 text-muted"></i>
+                    <p class="text-muted mt-3">Your cart is empty</p>
+                    <button class="btn btn-gradient rounded-pill" data-bs-dismiss="offcanvas" onclick="scrollToProducts()">Start Shopping</button>
+                </div>
+            </div>
+            <div id="cartTotal" class="cart-total mt-auto" style="display: none;">
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold">Total:</span>
+                    <span class="fw-bold text-gradient fs-4" id="totalPrice">$0</span>
+                </div>
+                <button class="btn btn-gradient w-100 rounded-pill mb-2">Proceed to Checkout</button>
+                <button class="btn btn-outline-secondary w-100 rounded-pill" data-bs-dismiss="offcanvas">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Info Modal -->
+    <div class="modal fade" id="accountInfoModal" tabindex="-1" aria-labelledby="accountInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accountInfoModalLabel">My Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar-placeholder bg-light rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-person-fill" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 id="accountUsername" class="mb-1"></h5>
+                        <p id="accountEmail" class="text-muted mb-0"></p>
+                    </div>
+                    <div class="account-details">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Full Name</label>
+                            <p id="accountFullName" class="mb-0"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Address</label>
+                            <p id="accountAddress" class="mb-0"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Phone Number</label>
+                            <p id="accountPhone" class="mb-0"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Member Since</label>
+                            <p id="accountJoinDate" class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Orders Modal -->
+    <div class="modal fade" id="myOrdersModal" tabindex="-1" aria-labelledby="myOrdersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myOrdersModalLabel">My Orders</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="ordersContent">
+                        <div class="empty-orders text-center py-5">
+                            <i class="bi bi-bag-x display-1 text-muted"></i>
+                            <h5 class="mt-3">No Orders Found</h5>
+                            <p class="text-muted mb-4">You haven't placed any orders yet.</p>
+                            <button class="btn btn-primary rounded-pill" data-bs-dismiss="modal" onclick="scrollToProducts()">Start Shopping</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">My Wishlist (<span id="wishlistItemCount">0</span>)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="wishlistItems">
+                <div class="empty-wishlist text-center py-5">
+                    <i class="bi bi-heart display-1 text-muted"></i>
+                    <p class="text-muted mt-3">Your wishlist is empty</p>
+                    <button class="btn btn-gradient rounded-pill" data-bs-dismiss="offcanvas" onclick="scrollToProducts()">Browse Products</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal"></button>
+                    <div class="row g-0" id="quickViewContent">
+                        <!-- Quick view content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTopFunc()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
