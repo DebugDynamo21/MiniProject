@@ -1519,6 +1519,30 @@ h6 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+.modal-header {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+body.light-mode .modal-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.light-mode) .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+body.light-mode .modal-title {
+    color: #333333;
+}
+
+body:not(.light-mode) .modal-title {
+    color: #f8f9fa;
+}
+
 .avatar-placeholder {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
@@ -1534,11 +1558,27 @@ h6 {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
-
 /* ============= ORDERS MODAL STYLES ============= */
 .empty-orders .display-1 {
     font-size: 4rem;
     opacity: 0.3;
+}
+
+/* Empty orders text styles */
+body.light-mode .empty-orders h5 {
+    color: #333333;
+}
+
+body.light-mode .empty-orders p {
+    color: #555555;
+}
+
+body:not(.light-mode) .empty-orders h5 {
+    color: #f8f9fa;
+}
+
+body:not(.light-mode) .empty-orders p {
+    color: #e9ecef;
 }
 
 .card {
@@ -1555,16 +1595,75 @@ h6 {
 /* Light mode specific styles */
 body.light-mode .modal-content {
     background: rgba(255, 255, 255, 0.95);
+    color: #333333;
+}
+
+body.light-mode .modal-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .modal-title {
+    color: #333333;
+}
+
+body.light-mode .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 body.light-mode .account-details .form-label {
     color: #495057;
 }
 
+body.light-mode .card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .card-title {
+    color: #333333;
+}
+
+body.light-mode .card-text {
+    color: #555555;
+}
+
+body.light-mode .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+body.light-mode .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
 /* Dark mode specific styles */
 body:not(.light-mode) .modal-content {
     background: rgba(30, 30, 46, 0.95);
     color: #f8f9fa;
+}
+
+body:not(.light-mode) .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+body:not(.light-mode) .btn-outline-secondary {
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+body:not(.light-mode) .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body:not(.light-mode) .modal-title {
+    color: #f8f9fa;
+}
+
+body:not(.light-mode) .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body:not(.light-mode) .account-details .form-label {
@@ -1576,7 +1675,21 @@ body:not(.light-mode) .card {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive adjustments */
+body:not(.light-mode) .card-title {
+    color: #f8f9fa;
+}
+
+body:not(.light-mode) .card-text {
+    color: #e9ecef;
+}
+
+body:not(.light-mode) h5 {
+    color: #f8f9fa;
+}
+
+body:not(.light-mode) .text-muted {
+    color: #adb5bd !important;
+}/* Responsive adjustments */
 @media (max-width: 768px) {
     .modal-dialog {
         margin: 10px;
