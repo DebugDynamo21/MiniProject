@@ -71,13 +71,16 @@ To test the LuxVision website, follow these steps:
 The following are some screenshots of the LuxVision website:
 
 ### 🏠 Home Page
-![Homepage](images/homepage.png)
+![Homepage]<img src="images/homepage.png" width="70%"/>
+
 
 ### 🛍️ Product Page
-![Product Page](images/product-page.png)
+![Product Page]<img src="images/product.png" width="70%"/>
+
 
 ### 🛒 Shopping Cart
-![Shopping Cart](images/shoping-cart.png)
+![Shopping Cart]<img src="images/shoping.png" width="70%"/>
+
 
 
 📦 API Reference
