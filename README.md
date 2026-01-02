@@ -75,7 +75,7 @@ The following are some screenshots of the LuxVision website:
 
 
 ### 🛍️ Product Page
-<img src="images/product.png" width="70%"/>
+<img src="images/product-page.png" width="70%"/>
 
 
 ### 🛒 Shopping Cart
