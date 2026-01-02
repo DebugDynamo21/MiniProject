@@ -71,13 +71,13 @@ To test the LuxVision website, follow these steps:
 The following are some screenshots of the LuxVision website:
 
 ### 🏠 Home Page
-![Homepage](Desktop/Github/MiniProject/images/homepage.png)
+![Homepage](images/homepage.png)
 
 ### 🛍️ Product Page
-![Product Page](Desktop/Github/MiniProject/images/product-page.png)
+![Product Page](images/product-page.png)
 
 ### 🛒 Shopping Cart
-![Shopping Cart](Desktop/Github/MiniProject/images/shooping-cart.png)
+![Shopping Cart](images/shoping-cart.png)
 
 
 📦 API Reference
@@ -86,7 +86,7 @@ The LuxVision website does not use any external APIs. However, if you are using 
 
 👤 Author
 ================
-The LuxVision website was created by ~Hardik Bhardwaj(https://github.com/username).
+The LuxVision website was created by ~Hardik Bhardwaj(https://github.com/DebugDynamo21).
 
 📝 License
 ================
